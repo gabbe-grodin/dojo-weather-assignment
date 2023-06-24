@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Forecast</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Dojo Weather</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Burbank</a>
+            </li>
+            <li>
+              <a href="#">Chicago</a>
+            </li>
+            <li>
+              <a href="#">Dallas</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="row city-displayed">
+          <h2>San Jose</h2>
+          <form action="" method="get">
+            <label for="temp-scale"> show temperature in </label>
+            <select name="temp-scale" id="temp-scale">
+              <option value="celsius">C</option>
+              <option value="fahrenheit">F</option>
+            </select>
+          </form>
+        </section>
+
+        <section class="row day-cards">
+          <div class="card today">
+            <h3>Today</h3>
+            <img src="./assets/some_rain.png" alt="" />
+            <span>some rain</span>
+            <div class="hi-lo">
+              <span class="high">24</span>
+              <span class="low">18</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Tomorrow</h3>
+            <img src="./assets/some_sun.png" alt="" />
+            <span>some sun</span>
+            <div class="hi-lo">
+              <span class="high">24</span>
+              <span class="low">18</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Friday</h3>
+            <img src="./assets/some_clouds.png" alt="" />
+            <span>some clouds</span>
+            <div class="hi-lo">
+              <span class="high">24</span>
+              <span class="low">18</span>
+            </div>
+          </div>
+          <div class="card saturday">
+            <h3>Saturday</h3>
+            <img src="./assets/some_sun.png" alt="" />
+            <span>some sun</span>
+            <div class="hi-lo">
+              <span class="high">24</span>
+              <span class="low">18</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- COOKIE ALERT FIXED -->
+
+        <section class="row cookie-alert">
+          <div class="col-1">
+            <img
+              src="./assets/cookie.png"
+              alt="black icon of a cookie with a bite taken out of it"
+            />
+          </div>
+          <div class="col-2">
+            <h4>Stop! Cookie time</h4>
+            <p>
+              We use cookies (sadly not the edible ones) to personalize content
+              and ads, to provide social media features and to analyze our
+              traffic. <a href="#">Read more...</a>
+            </p>
+          </div>
+          <div class="col-3">
+            <button>I Accept</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
