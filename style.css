@@ -17,6 +17,10 @@ header {
         background-color:#A7C4F4;
 }
 
+header .container {
+        background-color: #A7C4F4;
+}
+
 .container {
         width: 1000px;
         height: inherit;
