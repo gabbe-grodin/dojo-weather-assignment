@@ -18,13 +18,13 @@
         <nav>
           <ul>
             <li>
-              <a href="#">Burbank</a>
+              <a href="#" onclick="alert('Loading weather report...')">Burbank</a>
             </li>
             <li>
-              <a href="#">Chicago</a>
+              <a href="#" onclick="alert('Loading weather report...')">Chicago</a>
             </li>
             <li>
-              <a href="#">Dallas</a>
+              <a href="#" onclick="alert('Loading weather report...')">Dallas</a>
             </li>
           </ul>
         </nav>
@@ -37,20 +37,20 @@
           <form action="URL" method="get">
             <label for="temp-scale"> show temperature in </label>
             <select name="temp-scale" id="temp-scale">
-              <option value="celsius">C</option>
-              <option value="fahrenheit">F</option>
+              <option value="celsius">°C</option>
+              <option value="fahrenheit">°F</option>
             </select>
           </form>
         </section>
 
-        <section class="row day-cards">
-          <div class="card today">
+        <section class="row">
+          <div class="card">
             <h3>Today</h3>
             <img src="./assets/some_rain.png" alt="digital illustration of a grey cloud and raindrops">
             <span>some rain</span>
             <div class="hi-lo">
-              <span class="high">24</span>
-              <span class="low">18</span>
+              <span class="high">24°</span>
+              <span class="low">18°</span>
             </div>
           </div>
           <div class="card">
@@ -58,8 +58,8 @@
             <img src="./assets/some_sun.png" alt="digital illustration of a full yellow sun with orange sunbeams">
             <span>some sun</span>
             <div class="hi-lo">
-              <span class="high">24</span>
-              <span class="low">18</span>
+              <span class="high">27°</span>
+              <span class="low">19°</span>
             </div>
           </div>
           <div class="card">
@@ -67,24 +67,24 @@
             <img src="./assets/some_clouds.png" alt="digital illustration of a grey cloud">
             <span>some clouds</span>
             <div class="hi-lo">
-              <span class="high">24</span>
-              <span class="low">18</span>
+              <span class="high">21°</span>
+              <span class="low">16°</span>
             </div>
           </div>
-          <div class="card saturday">
+          <div class="card">
             <h3>Saturday</h3>
             <img src="./assets/some_sun.png" alt="digital illustration of a full yellow sun with orange sunbeams">
             <span>some sun</span>
             <div class="hi-lo">
-              <span class="high">24</span>
-              <span class="low">18</span>
+              <span class="high">26°</span>
+              <span class="low">21°</span>
             </div>
           </div>
         </section>
 
         <!-- COOKIE ALERT FIXED -->
 
-        <section class="row cookie-alert">
+        <section class="row cookie-alert" id="cookie-box">
           <div class="col-1">
             <img
               src="./assets/cookie.png"
@@ -99,7 +99,7 @@
             </p>
           </div>
           <div class="col-3">
-            <button>I Accept</button>
+            <button onclick="removeCookieAlert('cookie-box')">I Accept</button>
           </div>
         </section>
       </div>
